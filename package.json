@@ -1,0 +1,22 @@
+{
+  "name": "learn-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildwithuk/learn-typescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buildwithuk/learn-typescript/issues"
+  },
+  "homepage": "https://github.com/buildwithuk/learn-typescript#readme",
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

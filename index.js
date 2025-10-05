@@ -1,6 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("hello world");
+let n1Stirng = "This is it";
+let n2String = 3;
+console.log(n1Stirng);
+// Typecasting
+let firstName = "Mark";
+console.log(typeof firstName);
+let secondName = 1;
+console.log(typeof secondName);
+// Typescript conversion 
+let fetchedData = {
+    name: "Mark Antony",
+    email: "abc@gmail.com"
+};
+function getData() {
+    return fetchedData;
+}
+const dataFetched = getData();
+console.log(typeof dataFetched);
 const students = [
     { name: "John Doe", age: "32", profession: "laywer" },
     { name: "John Doe", age: "52", profession: "teacher" },

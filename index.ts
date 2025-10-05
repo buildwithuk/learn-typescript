@@ -1,6 +1,53 @@
 console.log("hello world")
 
 
+/// Union types
+type stringOrNumber = string | number | undefined;
+
+let n1Stirng : stringOrNumber = "This is it";
+let n2String : stringOrNumber    = 3;
+
+console.log(n1Stirng)
+
+// Conditional types
+type customDate = Date;
+type customString= String;
+
+type trueString = customString extends string ? true : false;
+
+// Typecasting
+
+let firstName = <any>"Mark";
+
+console.log(typeof firstName)
+
+let secondName = 1 as any;
+
+console.log(typeof secondName)
+
+
+
+// Typescript conversion 
+let fetchedData = {
+    name: "Mark Antony",
+    email: "abc@gmail.com"
+}
+
+type dataType = {
+    name: "Mark Antony",
+    email: "abc@gmail.com"
+}
+
+function getData() {
+    return fetchedData as dataType
+}
+
+
+const dataFetched = getData();
+
+console.log(typeof dataFetched)
+
+
 const students = [
 
     { name: "John Doe", age: "32", profession: "laywer" },

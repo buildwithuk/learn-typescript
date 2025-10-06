@@ -65,8 +65,6 @@ function getState(networkState: NetworkState) {
     }
 }
 
-console.log(getState( { state: "In Progress", errorCode: "43" }));
-
 
 type ReadOnlyAndOptions = {
     readonly name: "UK" | "AI",

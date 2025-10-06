@@ -1,6 +1,55 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("hello world");
+let intersectedAnimal = {
+    livesOnLand: true,
+    canFly: false,
+    hasNails: false
+};
+let networkState = {
+    size: 2,
+    state: "Completed",
+    date: new Date()
+};
+function getState(networkState) {
+    switch (networkState.state) {
+        case "loading":
+            return `${networkState.state}`;
+        case "In Progress":
+            return `${networkState.state} with  error code ${networkState.errorCode}`;
+        case "Completed":
+            return `${networkState.state} with size: ${networkState.size}`;
+        default:
+            console.log("Dont know what happened");
+    }
+}
+console.log(getState({ state: "In Progress", errorCode: "43" }));
+let readOnlyAndOptions = {
+    age: 3,
+    name: "UK"
+};
+console.log(readOnlyAndOptions);
+let imagePost = {
+    size: 1,
+    post: {
+        name: "Umair Khan",
+        date: new Date(),
+        age: 32
+    },
+    images: [
+        { name: "Yello flicker beat", size: 32, fileUrl: "http://www.google.com" },
+        { name: "Yello flicker beat", size: 32, fileUrl: "http://www.google.com" }
+    ]
+};
+console.log(typeof imagePost);
+console.log(imagePost.images[0]);
+let soundPost = { size: 3, post: {
+        name: "new post",
+        date: new Date(),
+        age: 32
+    } };
+console.log(soundPost);
+let newPostForPosting = { name: "Umair", date: new Date(), age: 3 };
 let n1Stirng = "This is it";
 let n2String = 3;
 console.log(n1Stirng);
@@ -9,6 +58,24 @@ let firstName = "Mark";
 console.log(typeof firstName);
 let secondName = 1;
 console.log(typeof secondName);
+let person = {
+    name: "Mark",
+    age: "32"
+};
+let brandOfCar = {
+    brand: "BMW",
+    color: "black"
+};
+brandOfCar = [];
+let newObjectCar = {
+    name: "Hello ",
+    age: 20
+};
+let post = {
+    title: "String",
+    name: "Stirng",
+    date: new Date()
+};
 // Typescript conversion 
 let fetchedData = {
     name: "Mark Antony",

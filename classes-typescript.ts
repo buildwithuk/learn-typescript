@@ -45,5 +45,5 @@ class AdminUser extends User {
 
 let adminUser : AdminUser = new AdminUser("John Doe", 43, new Date(), false);
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
 console.log(adminUser)

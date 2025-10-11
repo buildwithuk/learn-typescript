@@ -23,7 +23,6 @@ function getState(networkState) {
             console.log("Dont know what happened");
     }
 }
-console.log(getState({ state: "In Progress", errorCode: "43" }));
 let readOnlyAndOptions = {
     age: 3,
     name: "UK"

@@ -1,11 +1,12 @@
-var _a;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("hello world");
-var intersectedAnimal = {
+let intersectedAnimal = {
     livesOnLand: true,
     canFly: false,
     hasNails: false
 };
-var networkState = {
+let networkState = {
     size: 2,
     state: "Completed",
     date: new Date()
@@ -13,21 +14,21 @@ var networkState = {
 function getState(networkState) {
     switch (networkState.state) {
         case "loading":
-            return "".concat(networkState.state);
+            return `${networkState.state}`;
         case "In Progress":
-            return "".concat(networkState.state, " with  error code ").concat(networkState.errorCode);
+            return `${networkState.state} with  error code ${networkState.errorCode}`;
         case "Completed":
-            return "".concat(networkState.state, " with size: ").concat(networkState.size);
+            return `${networkState.state} with size: ${networkState.size}`;
         default:
             console.log("Dont know what happened");
     }
 }
-var readOnlyAndOptions = {
+let readOnlyAndOptions = {
     age: 3,
     name: "UK"
 };
 console.log(readOnlyAndOptions);
-var imagePost = {
+let imagePost = {
     size: 1,
     post: {
         name: "Umair Khan",
@@ -41,57 +42,56 @@ var imagePost = {
 };
 console.log(typeof imagePost);
 console.log(imagePost.images[0]);
-var soundPost = { size: 3, post: {
+let soundPost = { size: 3, post: {
         name: "new post",
         date: new Date(),
         age: 32
     } };
 console.log(soundPost);
-var newPostForPosting = { name: "Umair", date: new Date(), age: 3 };
-var n1Stirng = "This is it";
-var n2String = 3;
+let newPostForPosting = { name: "Umair", date: new Date(), age: 3 };
+let n1Stirng = "This is it";
+let n2String = 3;
 console.log(n1Stirng);
 // Typecasting
-var firstName = "Mark";
+let firstName = "Mark";
 console.log(typeof firstName);
-var secondName = 1;
+let secondName = 1;
 console.log(typeof secondName);
-var person = {
+let person = {
     name: "Mark",
     age: "32"
 };
-var brandOfCar = {
+let brandOfCar = {
     brand: "BMW",
     color: "black"
 };
 brandOfCar = [];
-var newObjectCar = {
+let newObjectCar = {
     name: "Hello ",
     age: 20
 };
-var post = {
+let post = {
     title: "String",
     name: "Stirng",
     date: new Date()
 };
 // Typescript conversion 
-var fetchedData = {
+let fetchedData = {
     name: "Mark Antony",
     email: "abc@gmail.com"
 };
 function getData() {
     return fetchedData;
 }
-var dataFetched = getData();
+const dataFetched = getData();
 console.log(typeof dataFetched);
-var students = [
+const students = [
     { name: "John Doe", age: "32", profession: "laywer" },
     { name: "John Doe", age: "52", profession: "teacher" },
     { name: "John Doe", age: "49", profession: "doctor" },
     { name: "John Doe", age: "23", profession: "engineer" }
 ];
-for (var _i = 0, students_1 = students; _i < students_1.length; _i++) {
-    var student = students_1[_i];
+for (let student of students) {
     console.log("Name: ", student.name);
 }
 function addNumbersInTs(a, b) {
@@ -106,14 +106,14 @@ console.log("2", 4);
 // @ts-ignore
 console.log(addNumbersInTs("test", 1));
 /// Now for the symbol
-var id = Symbol(12234);
-var user = (_a = {},
-    _a[id] = "123",
-    _a.name = "Uk",
-    _a.getId = function () {
+let id = Symbol(12234);
+const user = {
+    [id]: "123",
+    name: "Uk",
+    getId() {
         return this[id];
-    },
-    _a);
+    }
+};
 console.log(user.name);
 console.log(user.getId());
 // Unknown type
@@ -125,10 +125,10 @@ function multipleNumber(number) {
 }
 console.log(multipleNumber(2));
 // Annotation
-var customStringValue = "Some string";
-var customNumber = 1;
-var customSymbol = Symbol(123);
-var studentWithSymbol = {
+let customStringValue = "Some string";
+let customNumber = 1;
+let customSymbol = Symbol(123);
+const studentWithSymbol = {
     customSymbol: 32,
     customNumber: customNumber,
 };
@@ -140,4 +140,5 @@ function duckTyping(a, b) {
     return a * b;
 }
 // Inference
-var c = duckTyping(1, 3);
+let c = duckTyping(1, 3);
+//# sourceMappingURL=simple-typescript.js.map

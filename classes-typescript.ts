@@ -3,14 +3,15 @@ class User {
 
     name: string;
     age: number;
-    dateOfBirth: Date
+    dateOfBirth: Date;
+    protected profession: string
 
-    constructor(name: string, age: number, dateOfBirth: Date) {
+    constructor(name: string, age: number, dateOfBirth: Date, profession: string) {
 
         this.name = name;
         this.age = age;
         this.dateOfBirth = dateOfBirth;
-
+        this.profession = profession;
     }
 
     greet(): string {
@@ -22,7 +23,7 @@ class User {
 
 }
 
-let employeeUser: User = new User("Umair", 3, new Date(1991, 10, 15))
+let employeeUser: User = new User("Umair", 3, new Date(1991, 10, 15), "Software Engineer")
 
 console.log(employeeUser);
 console.log(employeeUser.greet());
@@ -34,16 +35,36 @@ class AdminUser extends User {
     departments?: string[]
 
 
-    constructor(name: string, age: number, dateOfBirth: Date, isAdmin: boolean,) {
-        super(name, age, dateOfBirth)
-
+    constructor(name: string, age: number, dateOfBirth: Date, isAdmin: boolean, profession: string) {
+        super(name, age, dateOfBirth, profession)
         this.isAdmin = isAdmin;
     }
 
 }
 
 
-let adminUser : AdminUser = new AdminUser("John Doe", 43, new Date(), false);
+let adminUser: AdminUser = new AdminUser("John Doe", 43, new Date(), false, "labour");
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+
+
+class ShortHandScript {
+
+
+    constructor(public name: string, private age: number, public readonly profession: string) { }
+
+
+}
+
+class AnotherClass extends ShortHandScript {
+
+    constructor(private dob: Date, name: string, age: number, profession: string) {
+        super(name, age, profession)
+    }
+
+
+}
+
+let instanceOfAnotherClass: AnotherClass = new AnotherClass(new Date(), "Umair", 32, "Software Engineer");
+
+
 console.log(adminUser)

@@ -4,4 +4,4 @@ node_modules/*
 **/*.d.map
 **/*.d.ts
 **/*.d.ts.map
-dist/*.*
+dist/*.js

@@ -1,5 +1,5 @@
 node_modules/*
 **/*.map
 **/*.d.map
-**/*d.ts.map
+**/*.d.ts.map
 dist/*.*

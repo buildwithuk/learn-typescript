@@ -141,4 +141,3 @@ function duckTyping(a, b) {
 }
 // Inference
 let c = duckTyping(1, 3);
-//# sourceMappingURL=index.js.map

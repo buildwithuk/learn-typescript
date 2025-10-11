@@ -29,4 +29,3 @@ class StudentResult {
 const subjects = ["English", "Urdu", "Maths"];
 let studentResult = new StudentResult("Umair", subjects, [78, 43, 66]);
 studentResult.grade = "3"; // Will throw error
-//# sourceMappingURL=mutator.js.map

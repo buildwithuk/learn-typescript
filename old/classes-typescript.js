@@ -47,4 +47,3 @@ class AnotherClass extends ShortHandScript {
 }
 let instanceOfAnotherClass = new AnotherClass(new Date(), "Umair", 32, "Software Engineer");
 console.log(adminUser);
-//# sourceMappingURL=classes-typescript.js.map

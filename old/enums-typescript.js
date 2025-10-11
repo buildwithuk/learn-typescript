@@ -30,4 +30,3 @@ let userFromDatabase = {
     age: 1,
     role: Roles.Admin
 };
-//# sourceMappingURL=enums-typescript.js.map

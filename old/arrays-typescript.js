@@ -11,4 +11,3 @@ let complexArray = ["hello", 1];
 let tuple = ["hello", "world", 1];
 console.log(tuple);
 let passingStudnets = [true, "UK", "John Doe", "Helen of Greece", "Spartans", 1];
-//# sourceMappingURL=arrays-typescript.js.map

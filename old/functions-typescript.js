@@ -37,4 +37,3 @@ let returnFromFunction = functionWithPromise("Umair");
 returnFromFunction.then((value) => {
     console.log(value);
 });
-//# sourceMappingURL=functions-typescript.js.map
